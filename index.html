@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <aside>
+            <figure>
+                <img src="avatar.jpg" id="avatar" alt="avatar">
+                <figcaption>Mikko Mallikas</figcaption>
+            </figure>
+            <img src="menu.svg" id="menuimg">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+
+        </main>
+        <script>
+            (function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('#menuimg');
+
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+        </script>
+    </body>
+</html>
